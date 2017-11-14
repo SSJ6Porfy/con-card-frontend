@@ -11,7 +11,7 @@ import { StyleSheet,
 export default class newContributionForm extends React.Component {
     render() {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.headerText}>Contribution List</Text> 
         </View>
@@ -68,7 +68,7 @@ export default class newContributionForm extends React.Component {
           title="Learn More"
           accessibilityLabel="Learn more about this purple button"
         />
-      </ScrollView>
+      </View>
     );
   }
 }
@@ -78,7 +78,6 @@ const Window = Dimensions.get("window");
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: 100%,
   },
   header: {
     flexDirection: "row",
