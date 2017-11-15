@@ -7,13 +7,13 @@ import { StyleSheet,
          Button,
          } from 'react-native';
 import NewContributionForm from "./app/components/newContributionForm";
+import MainScreenNavigator from "./app/components/navigators/mainNav";
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <NewContributionForm/>
-      </View>
+      
+      <MainScreenNavigator/>
     );
   }
 }

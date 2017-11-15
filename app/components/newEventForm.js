@@ -14,59 +14,38 @@ export default class newContributionForm extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>New Contribution!</Text> 
+          <Text style={styles.headerText}>New Event!</Text> 
         </View>
         <TextInput
           style={styles.textInputs}
-          placeholder={"First Name"}
+          placeholder={"Event Name"}
         />
         <TextInput
           style={styles.textInputs}
-          placeholder={"Last Name"}
-        />
-        <TextInput
-          style={styles.textInputs}
-          placeholder={"Street Address"}
-        />
-        <TextInput
-          style={styles.textInputs}
-          placeholder={"City / Town"}
+          placeholder={"Venue"}
         />
         <View style={styles.rowDiv}>
+          <TextInput
+            style={styles.stateZipText}
+            placeholder={"City / Town"}
+           />
           <TextInput
             style={styles.stateZipText}
             placeholder={"ST"}
           />
-          <TextInput
-            style={styles.stateZipText}
-            placeholder={"Zip Code"}
-          />
+        </View>
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>Add Event</Text>
+          </TouchableOpacity>
         </View>
         <TextInput
           style={styles.textInputs}
-          placeholder={"Email"}
-        />
-        <TextInput
-          style={styles.textInputs}
-          placeholder={"Phone Number"}
-        />
-        <View style={styles.rowDiv}>
-          <TextInput
-            style={styles.stateZipText}
-            placeholder={"Amount"}
-          />
-          <TextInput
-            style={styles.stateZipText}
-            placeholder={"Type"}
-          />
-        </View>
-        <TextInput
-          style={styles.textInputs}
-          placeholder={"Event"}
+          placeholder={"Event List"}
         />
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Save Contribution</Text>
+            <Text style={styles.buttonText}>Set as Current Event</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -82,7 +61,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    backgroundColor: "#7a6ff0",
+    backgroundColor: "#00cba0",
     alignItems: 'center',
     justifyContent: "center",
     width: Window.width,
@@ -121,19 +100,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#c9c4ff"
+    backgroundColor: "#adffed"
   },
   button: {
     elevation: 4,
     height: 50,
     backgroundColor:'#fff',
     borderWidth: 3,
-    borderColor: "#7a6ff0",
+    borderColor: "#00cba0",
     paddingLeft: 10,
     paddingRight: 10,
     justifyContent: "center",
     alignItems: "center",
-    shadowColor: '#6b0037',
+    shadowColor: '#005643',
     shadowOffset: {
       width: 0,
       height: 3
@@ -142,7 +121,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 1.0
   },
   buttonText: {
-    color: "#7a6ff0",
+    color: "#00cba0",
     fontWeight: "bold",
     fontSize: 30,
   },
