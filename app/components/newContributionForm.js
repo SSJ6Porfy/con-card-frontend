@@ -28,8 +28,21 @@ export default class newContributionForm extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Button title="=" onPress={() => this.props.navigation.navigate('DrawerOpen')}/>
-          <Text style={styles.headerText}>New Contribution!</Text> 
+        <View style={styles.iconContainer}>
+                <MaterialIcons
+                    name="view-headline"
+                    size={35}
+                    color="white"
+                    style={styles.icon}
+                        onPress={() => this.props.navigation.navigate('DrawerOpen')}
+                >
+                </MaterialIcons>
+            </View>
+            <View style={styles.iconContainer}>
+                <Text style={styles.headerText}>New Contribution!</Text> 
+            </View>
+            <View style={styles.iconContainer}>
+            </View>
         </View>
         <TextInput
           style={styles.textInputs}
@@ -96,18 +109,28 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flexDirection: "row",
+    flexDirection: 'row',
     backgroundColor: "#7a6ff0",
     alignItems: 'center',
-    justifyContent: "center",
+    justifyContent: 'center',
     width: Window.width,
     height: 70,
+  },
+  iconContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
+  icon: {
+    marginLeft: 5,
+    marginTop: 15,
+    alignSelf: 'flex-end',
   },
   headerText: {
     color: "white",
     fontWeight: "bold",
     marginTop: 20,
-    fontSize: 30,
+    fontSize: 15,
   },
   textInputs: {
     flexDirection: "row",
