@@ -39,15 +39,6 @@ export default class newContributionForm extends React.Component {
             <Text style={styles.buttonText}>Add Event</Text>
           </TouchableOpacity>
         </View>
-        <TextInput
-          style={styles.textInputs}
-          placeholder={"Event List"}
-        />
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Set as Current Event</Text>
-          </TouchableOpacity>
-        </View>
       </View>
     );
   }
@@ -61,7 +52,7 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    backgroundColor: "#00cba0",
+    backgroundColor: "#00c191",
     alignItems: 'center',
     justifyContent: "center",
     width: Window.width,
@@ -107,7 +98,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor:'#fff',
     borderWidth: 3,
-    borderColor: "#00cba0",
+    borderColor: "#00c191",
     paddingLeft: 10,
     paddingRight: 10,
     justifyContent: "center",
@@ -121,7 +112,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 1.0
   },
   buttonText: {
-    color: "#00cba0",
+    color: "#00c191",
     fontWeight: "bold",
     fontSize: 30,
   },
