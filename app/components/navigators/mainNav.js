@@ -14,13 +14,22 @@ MainScreenNavgiator.navigationOptions = {
     title: "Tab Example"
 };
 
+
 const mainDrawer = DrawerNavigator(
     {
-        
+        "Add New Event": {
+            path: '/',
+            screen: newEventForm
+        },
+        "Add New Contribution": {
+            path: '/',
+            screen: newContributionForm
+        }
     },
     {
-
+        initialRouteName: 'Add New Event',
+        drawerPosition: 'left'
     }
 );
 
-export default MainScreenNavgiator;
+export default mainDrawer;

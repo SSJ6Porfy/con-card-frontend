@@ -8,13 +8,28 @@ import { StyleSheet,
          Button,
          TouchableOpacity,
          } from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default class newContributionForm extends React.Component {
+    static navigationOptions = {
+        tabBarLabel: "New Event",
+        drawerIcon: () => {
+          return (
+            <MaterialIcons
+            name="add-circle"
+            size={24}
+            color="black"
+            >
+            </MaterialIcons>
+          );
+        }
+      }
     render() {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.headerText}>New Event!</Text> 
+            <Button title="=" onPress={() => this.props.navigation.navigate('DrawerOpen')}/>
+            <Text style={styles.headerText}>New Event!</Text> 
         </View>
         <TextInput
           style={styles.textInputs}

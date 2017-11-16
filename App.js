@@ -12,7 +12,6 @@ import MainScreenNavigator from "./app/components/navigators/mainNav";
 export default class App extends React.Component {
   render() {
     return (
-      
       <MainScreenNavigator/>
     );
   }

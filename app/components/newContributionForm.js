@@ -11,23 +11,24 @@ import { StyleSheet,
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default class newContributionForm extends React.Component {
-    static navigationOptions = {
-      tabBarLabel: "New Contribution",
-      drawerIcon: () => {
-        return (
-          <MaterialIcons
-            name="menu"
-            size={24}
-            style={{color: "black"}}
-          >
-          </MaterialIcons>
-        );
-      }
+  static navigationOptions = {
+    tabBarLabel: "New Contribution",
+    drawerIcon: () => {
+      return (
+        <MaterialIcons
+        name="add-circle-outline"
+        size={24}
+        color="black"
+        >
+        </MaterialIcons>
+      );
     }
+  }
     render() {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
+          <Button title="=" onPress={() => this.props.navigation.navigate('DrawerOpen')}/>
           <Text style={styles.headerText}>New Contribution!</Text> 
         </View>
         <TextInput
