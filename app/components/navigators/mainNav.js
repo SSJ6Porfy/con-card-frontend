@@ -2,8 +2,8 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { TabNavigator, DrawerNavigator } from 'react-navigation';
 
-import newContributionForm from '../newContributionForm';
-import newEventForm from '../newEventForm';
+import newContributionForm from '../contributions/newContributionForm';
+import newEventForm from '../events/newEventForm';
 
 let MainScreenNavgiator = TabNavigator({
     "New Contribution": { screen: newContributionForm },

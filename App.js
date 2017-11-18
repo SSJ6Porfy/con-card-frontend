@@ -6,7 +6,6 @@ import { StyleSheet,
          TextInput,
          Button,
          } from 'react-native';
-import NewContributionForm from "./app/components/newContributionForm";
 import MainScreenNavigator from "./app/components/navigators/mainNav";
 
 export default class App extends React.Component {
