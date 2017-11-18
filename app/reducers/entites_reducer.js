@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import eventsReducer from './events_reducer';
-import contributionsReducer from './contributions_reducer';
-import campaignsReducer from './campaigns_reducer';
+import EventsReducer from './events_reducer';
+import ContributionsReducer from './contributions_reducer';
+import CampaignsReducer from './campaigns_reducer';
 
-const entitiesReducer = combineReducers({
-    events: eventsReducer,
-    contributions: contributionsReducer,
-    campaigns: campaignsReducer
+const EntitiesReducer = combineReducers({
+    events: EventsReducer,
+    contributions: ContributionsReducer,
+    campaigns: CampaignsReducer
 });
 
-export default entitiesReducer;
+export default EntitiesReducer;
