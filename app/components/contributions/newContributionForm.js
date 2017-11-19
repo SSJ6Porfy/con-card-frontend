@@ -11,6 +11,11 @@ import { StyleSheet,
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default class newContributionForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
   static navigationOptions = {
     tabBarLabel: "New Contribution",
     drawerIcon: () => {
@@ -24,6 +29,11 @@ export default class newContributionForm extends React.Component {
       );
     }
   }
+
+  handleSubmit(e) {
+    e.preventDefault();
+  }
+
     render() {
     return (
       <View style={styles.container}>

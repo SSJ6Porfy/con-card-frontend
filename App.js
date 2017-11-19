@@ -7,11 +7,16 @@ import { StyleSheet,
          Button,
          } from 'react-native';
 import MainScreenNavigator from "./app/components/navigators/mainNav";
+import { Provider } from 'react-redux';
+import configureStore from './app/store/store';
 
 export default class App extends React.Component {
   render() {
+    const store = configureStore();
     return (
+    <Provider store={store}>
       <MainScreenNavigator/>
+    </Provider>
     );
   }
 }
