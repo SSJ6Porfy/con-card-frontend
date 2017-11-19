@@ -1,33 +1,27 @@
 {
-  "name": "Con-Card-Frontend-CRNA",
-  "version": "0.1.0",
+  "name": "contribution_card",
   "private": true,
-  "devDependencies": {
-    "react-native-scripts": "1.7.0",
-    "jest-expo": "^22.0.0",
-    "react-test-renderer": "16.0.0-beta.5"
+  "dependencies": {},
+  "description": "## About",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "jest": {
-    "preset": "jest-expo"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SSJ6Porfy/eContribution_Card.git"
   },
-  "dependencies": {
-    "axios": "^0.17.1",
-    "expo": "^22.0.2",
-    "lodash": "^4.17.4",
-    "react": "16.0.0-beta.5",
-    "react-native": "^0.49.5",
-    "react-native-elements": "^0.18.2",
-    "react-native-vector-icons": "^4.4.2",
-    "react-navigation": "^1.0.0-beta.19",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SSJ6Porfy/eContribution_Card/issues"
+  },
+  "homepage": "https://github.com/SSJ6Porfy/eContribution_Card#readme",
+  "devDependencies": {}
 }
