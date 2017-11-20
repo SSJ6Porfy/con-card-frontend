@@ -1,0 +1,1 @@
+json.partial! "api/contributions/contribution", contribution: @contribution

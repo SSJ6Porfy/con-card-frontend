@@ -1,0 +1,1 @@
+json.array! @contributions, partial: 'api/contributions/contribution', as: :contribution

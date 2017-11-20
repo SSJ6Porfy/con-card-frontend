@@ -1,0 +1,1 @@
+json.extract! event, :id, :user_id, :campaign_id, :name, :venue, :state, :city
