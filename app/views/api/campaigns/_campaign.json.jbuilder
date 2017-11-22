@@ -1,1 +1,1 @@
-json.extract! contribution, :id, :user_id, :name
+json.extract! campaign, :id, :user_id, :name
